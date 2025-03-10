@@ -76,7 +76,21 @@
              
   <section id="aegis-documentation">
 <h1>AEGIS documentation<a class="headerlink" href="#aegis-documentation" title="Link to this heading"></a></h1>
-<p>This is the main index page for the documentation of My Project.</p>
+<p>AEGIS: Air Emissions Grouped By Industrial Sectors
+AEGIS is a robust framework designed to build and compile emissions inventories for various industrial sectors. It integrates multiple emissions databases provided by the USEPA – including GHGRP, NEI, and TRI – and leverages the STEWI and STEWICOMBO tools to retrieve, merge, and process data. The framework produces facility- and process-level inventories, identifies discrepancies (e.g., NAICS or FRS mismatches), and performs exploratory analysis including emission concentration calculations and visualization.</p>
+<p>Features</p>
+<p>Multi-database Integration:
+Retrieves and combines emissions data from GHGRP, NEI, and TRI inventories.</p>
+<p>Robust Data Processing:
+Uses structured processing routines to merge facility and process-level data, apply NAICS code filtering, and address data quality issues.</p>
+<p>Emission Concentration Calculations:
+Computes emission concentrations using CO₂ as a reference to estimate flue gas totals.</p>
+<p>Exploratory Data Analysis &amp; Visualization:
+Generates scatter plots and other visualizations for in-depth analysis of emission flows and concentrations.</p>
+<p>Error Handling &amp; Logging:
+Incorporates detailed logging and robust error handling to ensure smooth execution and easier debugging.</p>
+<p>Extensible and Documented:
+Code is organized into modular functions with Sphinx-compatible docstrings, making it easier to extend and maintain.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>

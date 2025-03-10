@@ -35,7 +35,7 @@ Code is organized into modular functions with Sphinx-compatible docstrings, maki
 
    installation
    usage
-   main
+   run
    aegis
    statistical_analysis
 

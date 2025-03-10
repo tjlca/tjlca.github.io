@@ -39,8 +39,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"></div>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main.html">Main Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aegis.html">Aegis Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../statistical_analysis.html">Statistical analysis Documentation</a></li>
+</ul>
+
         </div>
       </div>
     </nav>
@@ -88,7 +95,7 @@
 
 
 <div class="viewcode-block" id="load_inventory_data">
-<a class="viewcode-back" href="../index.html#statistical_analysis.load_inventory_data">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.load_inventory_data">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">load_inventory_data</span><span class="p">(</span><span class="n">sector</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Load facility-level inventory data for a given sector.</span>
@@ -107,7 +114,7 @@
 
 
 <div class="viewcode-block" id="plot_histogram">
-<a class="viewcode-back" href="../index.html#statistical_analysis.plot_histogram">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.plot_histogram">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">plot_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">sector</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pollutant</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename_suffix</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Generate and save a histogram plot for pollutant flow amounts.</span>
@@ -129,7 +136,7 @@
 
 
 <div class="viewcode-block" id="detect_outliers">
-<a class="viewcode-back" href="../index.html#statistical_analysis.detect_outliers">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.detect_outliers">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">detect_outliers</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">column</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Identify outliers in a dataset using the Isolation Forest algorithm.</span>
@@ -153,7 +160,7 @@
 
 
 <div class="viewcode-block" id="remove_outliers">
-<a class="viewcode-back" href="../index.html#statistical_analysis.remove_outliers">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.remove_outliers">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">remove_outliers</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">outlier_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Remove outliers from the dataset.</span>
@@ -171,7 +178,7 @@
 
 
 <div class="viewcode-block" id="save_data">
-<a class="viewcode-back" href="../index.html#statistical_analysis.save_data">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.save_data">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">save_data</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">sector</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Save DataFrame to a CSV file.</span>
@@ -187,7 +194,7 @@
 
 
 <div class="viewcode-block" id="stat_analysis">
-<a class="viewcode-back" href="../index.html#statistical_analysis.stat_analysis">[docs]</a>
+<a class="viewcode-back" href="../statistical_analysis.html#statistical_analysis.stat_analysis">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">stat_analysis</span><span class="p">(</span><span class="n">sector</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Perform statistical analysis and outlier detection on facility-level emissions data.</span>

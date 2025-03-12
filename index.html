@@ -13,6 +13,7 @@
 		  gtag('config', 'UA-177898413-1');
 		</script>
 
+		
 		<title>Tapajyoti Ghosh - Researcher at National Renewable Energy Laboratory</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -21,19 +22,38 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+	
+	<!-- TOP BUTTON -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+		// Scroll to top functionality
+		mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	
 	<!-- HEADER with LOGO -->
 	<header id="header">
 		<a class="logo" href="index.html"><img src="images/logo.png" alt="Tapajyoti Ghosh Logo" width="40" height="40"/></a>
 	</header>
-
+				
 	<!-- NAVIGATION PANE -->
 	<div class="topnav" id="myTopnav">
 		<div class="inner">
 			<a href="index.html"> <b> HOME </b> </a>
-			<a href="about.html"> <b> ABOUT ME </b> </a>
-			<a href="projects.html"> <b> PROJECTS </b> </a>
+			<a href="academics.html"> <b> ACADEMICS </b> </a>
 			<a href="publications.html"> <b> PUBLICATIONS </b> </a>
+			<a href="projects.html"> <b> PROJECTS </b> </a>
 			<a href="#footer"> <b> CONTACT </b> </a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
 			<i class="fa fa-bars"></i> 
@@ -45,7 +65,7 @@
 	<section id="banner">
 		<div class="inner">
 			<h1>Tapajyoti Ghosh</h1>
-			<p>Researcher | National Renewable Energy Laboratory</p>
+			<p> Researcher | National Renewable Energy Laboratory </p>
 		</div>
 		<video autoplay loop muted playsinline src="images/banvid.mp4"></video>
 	</section>
@@ -62,7 +82,7 @@
 						<img src="images/profilepic.jpg" alt="Tapajyoti Ghosh" height="320" />
 					</div>
 					<div class="col-9 col-12-medium">
-						<p>Welcome to my website! I am a researcher at the National Renewable Energy Laboratory (NREL), focusing on innovative solutions in renewable energy and sustainability. My work involves exploring new energy technologies and optimizing their applications for a sustainable future.</p>
+						<p>Welcome to my site! I am a researcher at the National Renewable Energy Laboratory (NREL), focusing on innovative solutions in renewable energy and sustainability. My work involves exploring new energy technologies and optimizing their applications for a sustainable future.</p>
 						<p>My research interests include energy efficiency, solar and wind power advancements, and sustainable energy systems. If you have any questions or collaboration opportunities, feel free to reach out!</p>
 					</div>
 				</div>
@@ -70,23 +90,19 @@
 		</div>
 	</section>
 
-	<!-- Shortcuts Section -->
+	<!-- Button Shortcuts -->
 	<section id="cta" class="wrapper">
 		<div class="inner">
 			<div class="row">
 				<div class="col-6 col-12-medium">
-					<span style="font-size: 15pt;">
-						<p> <a href="projects.html" class="button primary fit">Projects</a></p>
-						<p> <a href="publications.html" class="button primary fit">Publications</a></p>
-						<p> <a href="about.html#experience" class="button primary fit">Experience</a></p>
-					</span>
+					<p> <a href="academics.html#educationdatta" class="button primary fit">Education and Experience</a></p>
+					<p> <a href="academics.html#coursesdatta" class="button primary fit">Courses</a></p>
+					<p> <a href="academics.html#skillsdatta" class="button primary fit">Skills</a></p>
 				</div>
 				<div class="col-6 col-12-medium">
-					<span style="font-size: 15pt;">
-						<p> <a href="about.html#education" class="button primary fit">Education</a></p>
-						<p> <a href="about.html#skills" class="button primary fit">Skills</a></p>
-						<p> <a href="#footer" class="button primary fit">Contact</a></p>
-					</span>
+					<p> <a href="publications.html" class="button primary fit">Publications</a></p>
+					<p> <a href="projects.html#wcdatta" class="button primary fit">Projects</a></p>
+					<p> <a href="participations.html#awardsdatta" class="button primary fit">Awards</a></p>
 				</div>
 			</div>
 		</div>
@@ -115,13 +131,5 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>

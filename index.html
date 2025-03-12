@@ -13,293 +13,93 @@
 		  gtag('config', 'UA-177898413-1');
 		</script>
 
-		
-		
-		<title>Tapajyoti Ghosh Personal Website</title>
+		<title>Tapajyoti Ghosh - Researcher at National Renewable Energy Laboratory</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="I am a PhD student at the Department of Biosciences and Bioengineering at Indian Institute 
-									of Technology Bombay, Maharashtra.This website contains an overview of my research
-									experience, expertise and education. " />
-		<meta name="keywords" content="Tapajyoti Ghosh, research, biology, protein,p53,IIT Bombay" />
+		<meta name="description" content="I am a researcher at the National Renewable Energy Laboratory specializing in renewable energy and sustainability. This website provides an overview of my research, experience, and accomplishments." />
+		<meta name="keywords" content="Tapajyoti Ghosh, renewable energy, research, sustainability, National Renewable Energy Laboratory" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-	
-	<!-- TOP BUTTON -->
-	
-			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-			
-			
-			<script>
-			
-							//Get the button:
-			mybutton = document.getElementById("myBtn");
 
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
-			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			  } else {
-				mybutton.style.display = "none";
-			  }
-			}
-
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-			  document.body.scrollTop = 0; // For Safari
-			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			}
-
-
-			</script>
-			
 	<!-- HEADER with LOGO -->
-			
-				<header id="header" >  
-				<a class="logo" href="index.html"><img src="images/deblogo.png" alt="Tapajyoti Ghosh Logo" width="40" height="40"/> </a>
-				</header>  
-					
-	<!-- NAVIGATION PANE -->				
-					
-				<!-- javascript for resposive on different screens -->
-				<script>
-	
-				/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-				function myFunction() {
-				  var x = document.getElementById("myTopnav");
-				  if (x.className === "topnav") {
-					x.className += " responsive";
-				  } else {
-					x.className = "topnav";
-				  }
-				}
-	
-				</script>	
+	<header id="header">
+		<a class="logo" href="index.html"><img src="images/logo.png" alt="Tapajyoti Ghosh Logo" width="40" height="40"/></a>
+	</header>
 
-	
-			<div class="topnav" id="myTopnav">
-				<div class="inner">
-					<a href="index.html"> <b> <span style="color:white"> HOME </span> </b> </a> 
-					<a href="academics.html"> <b> ACADEMICS </b> </a> 
-					<a href="publications.html"> <b> PUBLICATIONS </b> </a> 
-					<a href="participations.html"> <b> PARTICIPATIONS </b> </a>  
-					<a href="#footer"> <b> CONTACT </b> </a> 
-				    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
-					<i class="fa fa-bars"></i> 
-				   </a> 	   
+	<!-- NAVIGATION PANE -->
+	<div class="topnav" id="myTopnav">
+		<div class="inner">
+			<a href="index.html"> <b> HOME </b> </a>
+			<a href="about.html"> <b> ABOUT ME </b> </a>
+			<a href="projects.html"> <b> PROJECTS </b> </a>
+			<a href="publications.html"> <b> PUBLICATIONS </b> </a>
+			<a href="#footer"> <b> CONTACT </b> </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+			<i class="fa fa-bars"></i> 
+			</a>
+		</div>
+	</div>
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<h1>Tapajyoti Ghosh</h1>
+			<p>Researcher | National Renewable Energy Laboratory</p>
+		</div>
+		<video autoplay loop muted playsinline src="images/banvid.mp4"></video>
+	</section>
+
+	<!-- About Me Section -->
+	<section class="wrapper">
+		<div class="inner">
+			<header class="special">
+				<h2>About Me</h2>
+			</header>
+			<div class="content">
+				<div class="row">
+					<div class="col-3 col-12-medium">
+						<img src="images/profilepic.jpg" alt="Tapajyoti Ghosh" height="320" />
+					</div>
+					<div class="col-9 col-12-medium">
+						<p>Welcome to my website! I am a researcher at the National Renewable Energy Laboratory (NREL), focusing on innovative solutions in renewable energy and sustainability. My work involves exploring new energy technologies and optimizing their applications for a sustainable future.</p>
+						<p>My research interests include energy efficiency, solar and wind power advancements, and sustainable energy systems. If you have any questions or collaboration opportunities, feel free to reach out!</p>
+					</div>
 				</div>
 			</div>
+		</div>
+	</section>
 
-
-
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class= "inner">			
-					<h1>Tapajyoti Ghosh</h1>
-					<p> Doctoral Student | The Ohio State University </p>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h3>Contact Me</h3>
+			<div class="row">
+				<div class="col-6 col-12-medium">
+					<h4>Tapajyoti Ghosh</h4>
+					<p>National Renewable Energy Laboratory, USA</p>
+					<ul class="plain">
+						<li><i class="icon fa-envelope"></i> tapajyoti.ghosh@nrel.gov</li>
+					</ul>
 				</div>
-				<video autoplay loop muted playsinline src="images/banvid.mp4"></video> <!-- bannervideofile -->
-			</section>
-			
-
-		<!-- Highlights 2 column format for pic and description -->
-		
-			<section class="wrapper">
-				<div class="inner">
-					<header class="special">
-						<h2>About Me</h2>							
-					</header>
-				<!-- </div>			 -->
-
-	<!-- 		<section id="main" class="wrapper"> -->
-				<!-- <div class="inner"> -->
-					<div class="content">	
-						<div class="row">
-
-							<!-- <div class="col-1 col-12-medium"> -->
-									
-							<!-- </div>	 -->
-						
-							<div class="col-3 col-12-medium">
-									<img src="images/profilepic.jpg" alt="profile Tapajyoti" height="320" />
-							</div>					
-						
-							<div class="col-9 col-12-medium">
-									
-									<p style="font-size:120%;" align="justify">Welcome to my site! </p>
-									<p style="font-size:120%;" align="justify">I am a PhD student at the Department of Biosciences and Bioengineering at Indian Institute 
-									of Technology Bombay, Maharashtra. 
-									Before moving to Mumbai, I have completed my Integrated Masters in Systems Biology from University of Hyderabad, Telegana, India</p>
-																		
-									<p style="font-size:120%;" align="justify">In the broadest sense, my research area of interest includes the amyloid formation of different proteins
-									in different diseases. My doctoral research involves the study of tumor suppressor protein p53 - its amyloidogenicity and the 
-									consequent effect on the prognosis of cancer. This website contains an overview of my research
-									experience, expertise and education.  <br> If you have any questions, feel free to contact me. </p>
-							</div>
-							
-						</div>
-					</div>
+				<div class="col-6 col-12-medium">
+					<h4>Connect</h4>
+					<ul class="plain">
+						<li><a href="https://twitter.com/TapajyotiGhosh"><i class="icon fa-twitter"></i> Twitter</a></li>
+						<li><a href="https://www.linkedin.com/in/tapajyoti-ghosh"><i class="icon fa-linkedin"></i> LinkedIn</a></li>
+						<li><a href="https://github.com/tapajyotighosh"><i class="icon fa-github"></i> GitHub</a></li>
+					</ul>
 				</div>
-	<!--		</section> -->
+			</div>
+		</div>
+	</footer>
 
-			
-			</section>
- 
- <!-- RESEARCH INTEREST -->
-
-			<section >  
-			
-				<div class="inner">		<!-- add -->			
-
-		<!-- Research interest section -->
-					<header class="special">
-						 <h2>Research Interest</h2> 
-					</header>
-					
-		<!-- Research interest sub-section -->
-					<div class="highlights">
-					
-						<section>
-							<div class="content">
-								<header>
-									<h3> <b>Protein <br>Biophysics </b> </h3>
-								</header>
-									<img src="images/biophysicsdummy.jpg" alt="biophysics" height="250" />
-								<span style="font-size: 13pt;">
-									<p> Protein aggregation, Phase separation, Amyloid biology </p>
-								</span>							
-							
-							</div>
-
-						</section>
-						
-						
-						<section>
-							<div class="content">
-								<header>
-									<h3><b> Mathematical Modelling</b></h3>
-								</header>
-									<img src="images/networkdummy.jpg" alt="protein network" height="250" />
-								<span style="font-size: 13pt;">
-									<p> ODE based modelling, Steady state analysis, Single particle tracking </p>
-								</span>
-							</div>
-						</section>
-						
-						<section>
-							<div class="content">
-								<header>
-									<h3> <b>Cancer<br> Biology</b> </h3>
-								</header>
-									<img src="images/cancerdummy.jpg" alt="cancer" height="250"/>
-								<span style="font-size: 13pt;">
-									<p> TP53, Apoptosis, Cancer markers </p>
-								</span>
-							</div>
-						</section>
-						
-						
-						
-						
-					</div>
-				</div>
-			</section>
-			
-		
-
-		<!-- CTA -->
-		
-		<!-- button shortcut begin -->
-		
-			<section id="cta" class="wrapper">
-				<div class="inner">
-					<div class = "row">
-
-						<div class="col-6 col-12-medium">
-							<span style="font-size: 15pt;">
-								<p> <a href="academics.html#educationdatta" class="button primary fit">Education and Experience</a></p>
-								<p> <a href="academics.html#coursedatta" class="button primary fit">Courses</a></p>
-								<p> <a href="academics.html#skillsdatta" class="button primary fit">Skills</a></p>
-							</span>
-						</div>
-
-						<div class="col-6 col-12-medium">	
-							<span style="font-size: 15pt;">
-								<p> <a href="publications.html" class="button primary fit">Publications</a></p>
-								<p> <a href="participations.html#wcdatta" class="button primary fit">Workshops and Conferences</a></p>
-								<p> <a href="participations.html#awardsdatta" class="button primary fit">Awards</a></p>
-							</span>				
-						</div>
-						
-					</div>
-				</div>
-			</section>
-			
-		<!-- button shortcut end -->
-
-			<!-- <section class="wrapper">	 -->
-			<!-- </section> -->
-			
-
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h3 style = "color:#119dbd; font-size:200%"> Contact Me</h3>
-	
-					<div class="row">
-						<!-- <section>	 -->
-	
-						<div class="col-6 col-12-medium">					 
-							<h4> Tapajyoti Ghosh </h4>
-							<p> Department of Biosciences and Bioengineering, <br> Indian Institute of Technology Bombay,</br> Mumbai - 400076  <p>
-							<ul class="plain">
-							<li> <i class="icon fa-envelope">&nbsp;</i>debalina&nbsp[AT]&nbsp iitb &nbsp [DOT] &nbsp ac &nbsp [DOT] &nbsp in</a></li>
-							</ul>
-						</div>
-	
-						<!-- <section> -->
-						 <div class="col-1 col-12-medium">
-
-						</div>	
-
-						 <div class="col-5 col-12-medium">
-							<h4>Connect</h4>
-							<ul class="plain">
-								<li><a href="https://twitter.com/TapajyotiGhosh1"><i class="icon fa-twitter">&nbsp;</i>@TapajyotiGhosh1</a></li>
-								<li><a href="https://www.linkedin.com/in/debalina-d-289835158/"><i class="icon fa-linkedin">&nbsp;</i>linkedin.com/in/dattadebalina</a></li>
-								<li><a href="https://github.com/debalina-datta"><i class="icon fa-github">&nbsp;</i>Github</a></li>
-
-							</ul>
-						</div>
-						
-					</div>								
-					<div class="copyright">
-						<div class ="row">
-					
-							<div class="col-6 col-12-medium">
-								<p align="left"> COPYRIGHT &copy; 2020 DEBALINA DATTA. </p>
-							</div>
-					
-							<div class="col-6 col-12-medium">
-								<p align="right">  Theme adapted from templated.co</p> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

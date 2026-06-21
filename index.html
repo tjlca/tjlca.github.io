@@ -1,262 +1,206 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dr. Tapajyoti (TJ) Ghosh — TERRA Lab, WSU</title>
+	<meta name="description" content="Dr. Tapajyoti (TJ) Ghosh is an Assistant Professor of Chemical Engineering at Washington State University Tri-Cities and director of TERRA Lab, developing computational frameworks for sustainable energy and industrial systems through life cycle assessment, techno-ecological synergy, and AI-driven analytics." />
+	<meta name="keywords" content="Tapajyoti Ghosh, TERRA Lab, WSU, life cycle assessment, LCA, techno-ecological synergy, sustainable engineering, circular economy, INEF, PNNL" />
 
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177898413-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'UA-177898413-1');
-		</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<title>Tapajyoti Ghosh Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
-		<!-- Updated meta description and keywords to reflect NREL -->
-		<meta name="description" content="I am a researcher at the National Renewable Energy Laboratory (NREL). This website provides an overview of my research experience, expertise, and education." />
-		<meta name="keywords" content="Tapajyoti Ghosh, research, NREL, renewable energy, energy, technology" />
-
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-	
-		<!-- TOP BUTTON -->
-		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-		<script>
-			//Get the button:
-			mybutton = document.getElementById("myBtn");
-
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
-			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			  } else {
-				mybutton.style.display = "none";
-			  }
-			}
-
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-			  document.body.scrollTop = 0; // For Safari
-			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			}
-		</script>
-			
-		<!-- HEADER with LOGO -->
-		<header id="header">  
-			<a class="logo" href="index.html">
-				<img src="images/deblogo.png" alt="Tapajyoti Ghosh Logo" width="40" height="40"/> 
+	<!-- NAV -->
+	<nav class="nav">
+		<div class="container">
+			<a class="brand" href="index.html">
+				<span class="mark">TG</span>
+				<span>Tapajyoti&nbsp;Ghosh<small>TERRA Lab · WSU Tri-Cities</small></span>
 			</a>
-		</header>  
-					
-		<!-- NAVIGATION PANE -->				
-		<script>
-			/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-			function myFunction() {
-			  var x = document.getElementById("myTopnav");
-			  if (x.className === "topnav") {
-				x.className += " responsive";
-			  } else {
-				x.className = "topnav";
-			  }
-			}
-		</script>	
+			<button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+			<ul class="nav-links">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="research.html">Research &amp; Lab</a></li>
+				<li><a href="academics.html">Academics</a></li>
+				<li><a href="publications.html">Publications</a></li>
+				<li><a href="participations.html">Activities</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-		<div class="topnav" id="myTopnav">
-			<div class="inner">
-				<a href="index.html"><b><span style="color:white"> HOME </span></b></a> 
-				<a href="academics.html"><b> ACADEMICS </b></a> 
-				<a href="publications.html"><b> PUBLICATIONS </b></a> 
-				<a href="participations.html"><b> PARTICIPATIONS </b></a>  
-				<a href="#footer"><b> CONTACT </b></a> 
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
-					<i class="fa fa-bars"></i> 
-				</a> 	   
+	<!-- HERO -->
+	<header class="hero">
+		<div class="container">
+			<div>
+				<p class="role">Assistant Professor of Chemical Engineering · WSU Tri-Cities</p>
+				<h1>Designing systems that respect planetary limits.</h1>
+				<p class="lead">From the molecular scale of a chemical process to the planetary scale of ecosystem boundaries — I build the computational frameworks that reveal the true cost of our energy and industrial systems.</p>
+				<div class="pillset">
+					<span class="pill">Life Cycle Assessment</span>
+					<span class="pill">Techno-Ecological Synergy</span>
+					<span class="pill">Circular Economy</span>
+					<span class="pill">AI for Sustainability</span>
+				</div>
+				<div class="btn-row">
+					<a class="btn btn-primary" href="research.html">Explore TERRA Lab <i class="fa-solid fa-arrow-right"></i></a>
+					<a class="btn btn-light" href="publications.html">Publications</a>
+				</div>
+			</div>
+			<div class="hero-portrait">
+				<img src="images/profilepic.jpg" alt="Dr. Tapajyoti (TJ) Ghosh" />
+				<span class="badge">Director · TERRA Lab</span>
 			</div>
 		</div>
+	</header>
 
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">			
-				<h1>Tapajyoti Ghosh</h1>
-				<p>Senior Research Scientist at NREL</p>
+	<!-- STATS -->
+	<section class="section tight">
+		<div class="container">
+			<div class="stats reveal">
+				<div class="stat"><div class="num">20+</div><div class="lbl">Peer-reviewed papers</div></div>
+				<div class="stat"><div class="num">$2.1M+</div><div class="lbl">Funding secured as PI</div></div>
+				<div class="stat"><div class="num">5</div><div class="lbl">Open-source frameworks</div></div>
+				<div class="stat"><div class="num">10+</div><div class="lbl">Years in sustainable systems</div></div>
 			</div>
-			<video autoplay loop muted playsinline src="images/banvid.mp4"></video>
-		</section>
-			
-		<!-- About Me / Highlights -->
-		<section class="wrapper">
-			<div class="inner">
-				<header class="special">
-					<h2>About Me</h2>							
-				</header>
-				<div class="content">	
-					<div class="row">						
-						<div class="col-3 col-12-medium">
-							<img src="images/profilepic.jpg" alt="profile Tapajyoti" height="320" />
-						</div>					
-						<div class="col-9 col-12-medium">
-							<p style="font-size:120%;" align="justify">
-								Welcome to my site! 
-							</p>
-							<p style="font-size:120%;" align="justify">
-								I am currently working as a researcher at the 
-								National Renewable Energy Laboratory (NREL). My work focuses on exploring 
-								innovative solutions in renewable energy, sustainability, and advanced technologies.
-								This website contains an overview of my research experience, expertise, and education.
-							</p>
-							<p style="font-size:120%;" align="justify">
-								Feel free to look around and get in touch if you have any questions.
-							</p>
-						</div>	
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<section class="section bg-soft" id="about">
+		<div class="container">
+			<div class="split reveal">
+				<div>
+					<img class="portrait" src="images/profilepic.jpg" alt="Dr. Tapajyoti Ghosh" />
+					<ul class="about-meta">
+						<li><span class="k">Role</span><span>Assistant Professor &amp; INEF Faculty</span></li>
+						<li><span class="k">Dept.</span><span>Chemical Engineering</span></li>
+						<li><span class="k">Lab</span><span>TERRA Lab</span></li>
+						<li><span class="k">Location</span><span>Richland, Washington</span></li>
+					</ul>
+				</div>
+				<div>
+					<span class="eyebrow">About</span>
+					<h2>A "Process-to-Planet" approach to sustainability.</h2>
+					<p>I am an Assistant Professor in the Department of Chemical Engineering at Washington State University Tri-Cities, with a joint appointment at the Institute for Northwest Energy Futures (INEF), in the heart of the Columbia River energy corridor next to Pacific Northwest National Laboratory.</p>
+					<p>I direct the <strong>TERRA Lab</strong> — Techno-Ecological Research for Resilient Anthropogenic Systems — where my group develops computational frameworks, open-source tools, and systems models that quantify the full environmental, economic, and social cost of human energy and industrial systems.</p>
+					<p>Before joining WSU, I was a Senior Research Scientist at the U.S. DOE National Renewable Energy Laboratory (NREL), a postdoctoral fellow at the MIT Energy Initiative, and earned my PhD in Chemical Engineering at The Ohio State University under Prof. Bhavik R. Bakshi. My work spans life cycle assessment, techno-ecological synergy, circular economy modeling, and AI-driven sustainability analytics.</p>
+					<div class="btn-row">
+						<a class="btn btn-ghost" href="academics.html">Education &amp; experience <i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
-		</section>
- 
-		<!-- RESEARCH INTEREST -->
-		<section>  
-			<div class="inner">		
-				<header class="special">
-					<h2>Research Interests</h2> 
-				</header>
-				<!-- Example placeholder interests; replace with relevant fields for NREL work -->
-				<div class="highlights">
+		</div>
+	</section>
 
-					<!-- 1st Research Focus -->
-					<section>
-						<div class="content">
-							<header>
-								<h3><b>Circular Economy of Energy Systems</b></h3>
-							</header>
-							<img src="images/biophysicsdummy.jpg" alt="circularity & sustainability" height="250" />
-							<span style="font-size: 13pt;">
-								<p>
-									Leading efforts to expand circular economy methods to develop integrated frameworks 
-									for quantifying and visualizing the environmental impacts of energy systems, with a focus 
-									on geospatially and temporally explicit scenario analyses, material flows, and sustainable 
-									technology pathways.
-								</p>
-							</span>							
-						</div>
-					</section>
-					
-					<!-- 2nd Research Focus -->
-					<section>
-						<div class="content">
-							<header>
-								<h3><b>Environmental Impact & Life Cycle Assessment</b></h3>
-							</header>
-							<img src="images/networkdummy.jpg" alt="environmental impact & life cycle assessment" height="250" />
-							<span style="font-size: 13pt;">
-								<p>
-									Conducting and supporting LCA studies on building materials, manufacturing processes,
-									and energy technologies, while developing code-based LCA tools and integrating 
-									prospective LCA with system models for robust sustainability evaluations.
-								</p>
-							</span>
-						</div>
-					</section>
-					
-					<!-- 3rd Research Focus -->
-					<section>
-						<div class="content">
-							<header>
-								<h3><b>Technoeconomic & Policy Analysis</b></h3>
-							</header>
-							<img src="images/cancerdummy.jpg" alt="technoeconomic & policy analysis" height="250"/>
-							<span style="font-size: 13pt;">
-								<p>
-									Applying integrated assessment models, technoeconomic analyses, and advanced 
-									optimization techniques to guide policy development, assess resource utilization, 
-									and evaluate market-driven solutions for circular economy and low-carbon energy transitions.
-								</p>
-							</span>
-						</div>
-					</section>
-
+	<!-- RESEARCH FOCUS -->
+	<section class="section" id="focus">
+		<div class="container">
+			<div class="section-head center reveal">
+				<span class="eyebrow">What I work on</span>
+				<h2>Research at every scale</h2>
+				<p>Engineering alone — optimizing within fixed system boundaries — is no longer enough. TERRA Lab pushes those boundaries outward to include ecological systems, economic equilibrium, and AI-driven analytics within engineering design itself.</p>
+			</div>
+			<div class="grid grid-3 reveal">
+				<div class="card">
+					<div class="ico"><i class="fa-solid fa-recycle"></i></div>
+					<div class="tagline">Circularity</div>
+					<h3>Circular Economy &amp; Critical Materials</h3>
+					<p>Dynamic material-flow and agent-based models (CELAVI, 4P) for wind-blade, solar-PV, battery, and plastics circularity — optimizing end-of-life pathways by economic and environmental criteria.</p>
+				</div>
+				<div class="card">
+					<div class="ico"><i class="fa-solid fa-leaf"></i></div>
+					<div class="tagline">Methods</div>
+					<h3>Life Cycle Assessment &amp; Absolute Sustainability</h3>
+					<p>Process-based, hybrid, prospective, and dynamic LCA — coupled with techno-ecological synergy and planetary boundaries to measure whether a system is genuinely sustainable, not just relatively better.</p>
+				</div>
+				<div class="card">
+					<div class="ico"><i class="fa-solid fa-microchip"></i></div>
+					<div class="tagline">Analytics</div>
+					<h3>AI &amp; Integrated Assessment Modeling</h3>
+					<p>LLM- and RAG-powered LCA automation (LiAISON), integrated assessment model coupling (GCAM, IMAGE), and capacity-expansion-aware emission factors for a decarbonizing grid.</p>
 				</div>
 			</div>
-		</section>
-			
-		<!-- CTA (shortcut buttons) -->
-		<section id="cta" class="wrapper">
-			<div class="inner">
-				<div class="row">
-					<div class="col-6 col-12-medium">
-						<span style="font-size: 15pt;">
-							<p><a href="academics.html#educationdatta" class="button primary fit">Education and Experience</a></p>
-							<p><a href="academics.html#coursedatta" class="button primary fit">Courses</a></p>
-							<p><a href="academics.html#skillsdatta" class="button primary fit">Skills</a></p>
-						</span>
-					</div>
-					<div class="col-6 col-12-medium">	
-						<span style="font-size: 15pt;">
-							<p><a href="publications.html" class="button primary fit">Publications</a></p>
-							<p><a href="participations.html#wcdatta" class="button primary fit">Workshops and Conferences</a></p>
-							<p><a href="participations.html#awardsdatta" class="button primary fit">Awards</a></p>
-						</span>				
-					</div>
+			<div class="center" style="margin-top:38px;">
+				<a class="btn btn-primary" href="research.html">See all research clusters <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- TOOLS STRIP -->
+	<section class="section bg-alt">
+		<div class="container">
+			<div class="section-head reveal">
+				<span class="eyebrow">Open-source frameworks</span>
+				<h2>Tools built &amp; led</h2>
+			</div>
+			<div class="grid grid-3 reveal">
+				<div class="card tool"><div class="tagline">AI + LCA</div><h3>LiAISON</h3><p>LLM/RAG-powered LCA platform automating inventory matching and impact computation on Brightway2.5 &amp; AWS.</p><span class="repo"><i class="fa-brands fa-github"></i> NREL/LiAISON</span></div>
+				<div class="card tool"><div class="tagline">Dynamic MFA</div><h3>CELAVI</h3><p>Circular-economy LCA &amp; visualization for wind blades, PV glass, and composites across U.S. regions over time.</p><span class="repo"><i class="fa-brands fa-github"></i> NREL/celavi</span></div>
+				<div class="card tool"><div class="tagline">ABM</div><h3>4P Platform</h3><p>Plastic Parallel Pathways — agent-based + system-dynamics modeling of recycling behavior and PET circularity.</p><span class="repo"><i class="fa-brands fa-github"></i> NREL/4P</span></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CALLOUT -->
+	<section class="section">
+		<div class="container">
+			<div class="callout bg-dark reveal">
+				<span class="eyebrow" style="color:var(--green-200)">Join the lab</span>
+				<h2>Looking for graduate students &amp; collaborators</h2>
+				<p>TERRA Lab is recruiting motivated PhD and MS students interested in life cycle assessment, sustainable process design, circular economy, and AI for energy systems — with access to PNNL, INEF, and DOE-funded projects across the Pacific Northwest.</p>
+				<div class="btn-row">
+					<a class="btn btn-primary" href="research.html#join">Prospective students</a>
+					<a class="btn btn-light" href="#contact">Get in touch</a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<h3 style="color:#119dbd; font-size:200%">Contact Me</h3>
-	
-				<div class="row">
-					<div class="col-6 col-12-medium">					 
-						<h4>Tapajyoti Ghosh</h4>
-						<p>
-							National Renewable Energy Laboratory (NREL),<br>
-							Golden, Colorado, USA
-						</p>
-						<ul class="plain">
-							<!-- Provide a real email or keep as placeholder -->
-							<li><i class="icon fa-envelope">&nbsp;</i>tapajyoti.ghosh@nrel.gov</li>
-						</ul>
-					</div>
-	
-					<div class="col-1 col-12-medium"></div>
-
-					<div class="col-5 col-12-medium">
-						<h4>Connect</h4>
-						<ul class="plain">
-							<li>
-								<a href="https://www.linkedin.com/in/tapajyoti-ghosh-6ab66747/">
-									<i class="icon fa-linkedin">&nbsp;</i>LinkedIn Profile
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>	
-
-				<div class="copyright">
-					<div class="row">
-						<div class="col-6 col-12-medium">
-							<p align="left">COPYRIGHT &copy; 2020 TAPAJYOTI GHOSH.</p>
-						</div>
-						<div class="col-6 col-12-medium">
-							<p align="right">Theme adapted from templated.co</p> 
-						</div>
+	<!-- FOOTER / CONTACT -->
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="cols">
+				<div>
+					<h4>Dr. Tapajyoti (TJ) Ghosh</h4>
+					<p class="lede">Assistant Professor, Department of Chemical Engineering &amp; Institute for Northwest Energy Futures (INEF), Washington State University Tri-Cities. Director, TERRA Lab.</p>
+					<div class="social">
+						<a href="https://scholar.google.com/citations?user=lT_g-EEAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i></a>
+						<a href="https://www.linkedin.com/in/tapajyoti-ghosh-6ab66747/" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+						<a href="https://github.com/tapajyoti-ghosh" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
 					</div>
 				</div>
+				<div>
+					<h4>Contact</h4>
+					<ul>
+						<li><i class="fa-solid fa-envelope"></i> tapajyoti.ghosh@wsu.edu</li>
+						<li><i class="fa-solid fa-location-dot"></i> Richland, Washington, USA</li>
+						<li><i class="fa-solid fa-building-columns"></i> WSU Tri-Cities · INEF</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Explore</h4>
+					<ul>
+						<li><a href="research.html">Research &amp; TERRA Lab</a></li>
+						<li><a href="academics.html">Academics &amp; CV</a></li>
+						<li><a href="publications.html">Publications</a></li>
+						<li><a href="participations.html">Talks &amp; Awards</a></li>
+					</ul>
+				</div>
 			</div>
-		</footer>
+			<div class="bottom">
+				<span>© 2026 Tapajyoti Ghosh · TERRA Lab</span>
+				<span>Techno-Ecological Research for Resilient Anthropogenic Systems</span>
+			</div>
+		</div>
+	</footer>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+	<button id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+	<script src="assets/js/site.js"></script>
+</body>
 </html>

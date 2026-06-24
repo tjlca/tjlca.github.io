@@ -1,35 +1,37 @@
 /* =====================================================================
-   TERRA Lab — Dr. Tapajyoti (TJ) Ghosh
-   Modern academic design system · Washington State University colors
-   Crimson #981E32 · Gray #5E6A71
+   SEED — Sustainable Engineering and Ecological Design Group
+   Dr. Tapajyoti (TJ) Ghosh · WSU Tri-Cities
+   Forest green (logo) primary · WSU crimson #981E32 accent
    ===================================================================== */
 
 :root{
-  /* names kept from original theme; values remapped to WSU crimson/gray */
-  --green-900:#4a0d1a;   /* deepest crimson — footer / hero base */
-  --green-800:#6b1226;   /* dark crimson — page-header */
-  --green-700:#7d1828;   /* crimson — button hover */
-  --green-600:#981E32;   /* WSU crimson — primary */
-  --green-500:#a82e45;   /* crimson accent — eyebrows */
-  --green-400:#c25068;   /* light crimson accent */
-  --green-200:#e7b8c0;   /* pale crimson — eyebrows on dark */
-  --green-50:#fbeef0;    /* crimson tint — chips / icon bg */
-  --teal:#5e6a71;        /* WSU gray accent */
-  --earth:#5e6a71;       /* WSU gray */
-  --amber:#5e6a71;       /* WSU gray (was accent gold) */
-  --ink:#2b2f33;         /* near-black gray */
-  --body:#3f464b;
-  --muted:#6b7378;
-  --line:#ece2e4;
+  /* forest green — matches the SEED logo (primary) */
+  --green-900:#0c3314;   /* deepest green — footer / hero base */
+  --green-800:#114a1c;   /* dark green — page-header */
+  --green-700:#1b5e20;   /* green — button hover / SEED logo green */
+  --green-600:#2e7d32;   /* primary green */
+  --green-500:#3f9142;   /* green accent — eyebrows */
+  --green-400:#66bb6a;   /* light green accent */
+  --green-200:#bfe3c4;   /* pale green — eyebrows on dark */
+  --green-50:#eef7ef;    /* green tint — chips / icon bg */
+  --crimson:#981E32;     /* WSU crimson — secondary accent */
+  --crimson-200:#e7b8c0; /* pale crimson */
+  --teal:#981E32;        /* crimson accent slot */
+  --earth:#7a5c3e;
+  --amber:#981E32;       /* crimson accent (award border) */
+  --ink:#16241d;         /* near-black green */
+  --body:#33433b;
+  --muted:#6b7c72;
+  --line:#e2eae4;
   --bg:#ffffff;
-  --bg-soft:#faf6f7;
-  --bg-alt:#f4eef0;
+  --bg-soft:#f6faf7;
+  --bg-alt:#eef5f0;
   --white:#ffffff;
   --radius:18px;
   --radius-sm:12px;
-  --shadow-sm:0 1px 2px rgba(74,13,26,.06),0 4px 14px rgba(74,13,26,.05);
-  --shadow:0 10px 30px rgba(74,13,26,.10);
-  --shadow-lg:0 24px 60px rgba(74,13,26,.16);
+  --shadow-sm:0 1px 2px rgba(12,51,20,.06),0 4px 14px rgba(12,51,20,.05);
+  --shadow:0 10px 30px rgba(12,51,20,.10);
+  --shadow-lg:0 24px 60px rgba(12,51,20,.16);
   --maxw:1160px;
   --font-head:"Outfit","Plus Jakarta Sans",system-ui,sans-serif;
   --font-body:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -59,7 +61,7 @@ p{margin:0 0 1.1em;}
 .section.tight{padding:64px 0;}
 .bg-soft{background:var(--bg-soft);}
 .bg-alt{background:var(--bg-alt);}
-.bg-dark{background:linear-gradient(160deg,var(--green-900),var(--green-700));color:#f1dde1;}
+.bg-dark{background:linear-gradient(160deg,var(--green-900),var(--green-700));color:#dceee1;}
 .bg-dark h1,.bg-dark h2,.bg-dark h3,.bg-dark h4{color:#fff;}
 
 /* ---------- Eyebrow / section heads ---------- */
@@ -125,20 +127,20 @@ p{margin:0 0 1.1em;}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;overflow:hidden;background:linear-gradient(165deg,#4a0d1a 0%,#7d1828 45%,#981E32 100%);color:#f1dde1;}
+.hero{position:relative;overflow:hidden;background:linear-gradient(165deg,#0c3314 0%,#114a1c 45%,#2e7d32 100%);color:#dceee1;}
 .hero::before{
   content:"";position:absolute;inset:0;
   background:
-    radial-gradient(600px 380px at 85% 12%,rgba(168,46,69,.34),transparent 60%),
-    radial-gradient(520px 420px at 8% 90%,rgba(94,106,113,.24),transparent 60%);
+    radial-gradient(600px 380px at 85% 12%,rgba(102,187,106,.32),transparent 60%),
+    radial-gradient(520px 420px at 8% 90%,rgba(152,30,50,.20),transparent 60%);
   pointer-events:none;
 }
 .hero .container{position:relative;display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center;padding-top:84px;padding-bottom:88px;}
 .hero h1{color:#fff;margin-bottom:.35em;}
-.hero .lead{font-size:1.22rem;color:#ecc7cd;max-width:36ch;}
-.hero .role{font-family:var(--font-head);font-weight:600;color:#e7a9b3;font-size:1.05rem;letter-spacing:.01em;margin-bottom:18px;}
+.hero .lead{font-size:1.22rem;color:#bfe3ce;max-width:36ch;}
+.hero .role{font-family:var(--font-head);font-weight:600;color:#9ad9b4;font-size:1.05rem;letter-spacing:.01em;margin-bottom:18px;}
 .hero .pillset{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px;}
-.pill{font-size:.82rem;font-weight:600;font-family:var(--font-head);padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);color:#f0d6db;}
+.pill{font-size:.82rem;font-weight:600;font-family:var(--font-head);padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);color:#cdeed8;}
 .hero-portrait{position:relative;justify-self:center;}
 .hero-portrait img{
   width:300px;height:360px;object-fit:cover;border-radius:24px;
@@ -242,7 +244,7 @@ p{margin:0 0 1.1em;}
   background:var(--green-50);padding:4px 12px;border-radius:999px;margin-bottom:10px;letter-spacing:.02em;}
 .pub .ptitle{font-family:var(--font-head);font-weight:600;color:var(--ink);font-size:1.06rem;line-height:1.4;margin-bottom:6px;}
 .pub .authors{color:var(--muted);font-size:.92rem;margin-bottom:0;}
-.pub .authors .me{color:var(--green-700);font-weight:700;}
+.pub .authors .me{color:var(--crimson);font-weight:700;}
 .pub .view{display:inline-flex;align-items:center;gap:5px;margin-top:12px;font-family:var(--font-head);font-weight:600;font-size:.85rem;}
 .pub .note{color:var(--earth);font-style:italic;font-size:.88rem;}
 @media(max-width:560px){.pub{grid-template-columns:1fr;gap:8px;padding:22px;}.pub .pn{font-size:1.1rem;}}
@@ -273,28 +275,28 @@ p{margin:0 0 1.1em;}
 /* ---------- Highlight / callout band ---------- */
 .callout{border-radius:24px;padding:54px 48px;text-align:center;}
 .callout h2{color:#fff;max-width:20ch;margin-left:auto;margin-right:auto;}
-.callout p{color:#f0d9dd;max-width:54ch;margin:0 auto 26px;font-size:1.08rem;}
+.callout p{color:#cdeed8;max-width:54ch;margin:0 auto 26px;font-size:1.08rem;}
 .callout .btn-row{justify-content:center;}
 
 /* ---------- Page header (interior pages) ---------- */
-.page-header{background:linear-gradient(160deg,var(--green-800),var(--green-700));color:#f1dde1;padding:72px 0 60px;position:relative;overflow:hidden;}
-.page-header::before{content:"";position:absolute;inset:0;background:radial-gradient(520px 320px at 88% 10%,rgba(168,46,69,.32),transparent 60%);}
+.page-header{background:linear-gradient(160deg,var(--green-800),var(--green-700));color:#dceee1;padding:72px 0 60px;position:relative;overflow:hidden;}
+.page-header::before{content:"";position:absolute;inset:0;background:radial-gradient(520px 320px at 88% 10%,rgba(102,187,106,.30),transparent 60%);}
 .page-header .container{position:relative;}
 .page-header h1{color:#fff;margin-bottom:.25em;}
-.page-header p{color:#ecc7cd;font-size:1.12rem;max-width:60ch;margin:0;}
+.page-header p{color:#bfe3ce;font-size:1.12rem;max-width:60ch;margin:0;}
 
 /* ---------- Footer ---------- */
-.footer{background:var(--green-900);color:#cbabb1;padding:64px 0 30px;}
+.footer{background:var(--green-900);color:#a9c9b6;padding:64px 0 30px;}
 .footer h4{color:#fff;font-size:1.05rem;margin-bottom:14px;}
-.footer a{color:#e7c6cc;}
+.footer a{color:#bfe3ce;}
 .footer a:hover{color:#fff;}
 .footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px;}
 .footer .lede{max-width:34ch;font-size:.96rem;}
 .footer ul{list-style:none;margin:0;padding:0;}
 .footer ul li{margin-bottom:10px;font-size:.95rem;display:flex;align-items:center;gap:9px;}
-.footer .bottom{border-top:1px solid rgba(255,255,255,.10);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;color:#9c7f85;}
+.footer .bottom{border-top:1px solid rgba(255,255,255,.10);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;color:#7fa491;}
 .footer .social{display:flex;gap:12px;}
-.footer .social a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#f0d6db;font-size:1.05rem;transition:.2s;}
+.footer .social a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:#cdeed8;font-size:1.05rem;transition:.2s;}
 .footer .social a:hover{background:var(--green-500);color:#fff;transform:translateY(-2px);}
 @media(max-width:760px){.footer .cols{grid-template-columns:1fr;gap:28px;}}
 
@@ -357,3 +359,12 @@ p{margin:0 0 1.1em;}
   .stats{grid-template-columns:1fr;}
   .hero-portrait img{width:200px;height:244px;}
 }
+
+
+/* ---------- SEED logo ---------- */
+.brand-logo{height:42px;width:auto;display:block;}
+@media(max-width:600px){.brand-logo{height:36px;}}
+.logo-chip{background:#fff;border-radius:16px;padding:12px 16px;display:inline-block;box-shadow:var(--shadow);}
+.logo-chip img{height:54px;width:auto;display:block;}
+.footer .flogo{background:#fff;border-radius:14px;padding:10px 12px;display:inline-block;margin-bottom:16px;box-shadow:0 6px 18px rgba(0,0,0,.18);}
+.footer .flogo img{height:46px;width:auto;display:block;}

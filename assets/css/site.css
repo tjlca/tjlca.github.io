@@ -24,8 +24,8 @@
   --muted:#6b7c72;
   --line:#e2eae4;
   --bg:#ffffff;
-  --bg-soft:#f6faf7;
-  --bg-alt:#eef5f0;
+  --bg-soft:#ffffff;
+  --bg-alt:#e6e9ec;
   --white:#ffffff;
   --radius:18px;
   --radius-sm:12px;
@@ -43,7 +43,7 @@ body{
   margin:0;
   font-family:var(--font-body);
   color:var(--body);
-  background:var(--bg);
+  background:#eceef1;
   line-height:1.65;
   font-size:17px;
   -webkit-font-smoothing:antialiased;
